@@ -1,0 +1,27 @@
+{
+  "name": "zelqia-core",
+  "version": "1.0.0",
+  "description": "ZELQIA - Luxury Jewellery & Accessories Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "server": "node server/server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "axios": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.4.1",
+    "nodemailer": "^10.0.10",
+    "razorpay": "^2.9.4",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
